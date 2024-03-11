@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: flavius-e2e-repository
+spec:
+  url: https://github.com/rhtap-hub/flavius-e2e

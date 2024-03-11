@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: flavius-e2e 
+  janus-idp.io/tekton: flavius-e2e
+  backstage.io/kubernetes-id: flavius-e2e
+  backstage.io/kubernetes-namespace: flavius-e2e 
+  app.kubernetes.io/part-of: flavius-e2e
+resources: 
+- application-dev.yaml 
+- application-stage.yaml 
+- application-prod.yaml  
